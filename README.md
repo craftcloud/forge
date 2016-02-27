@@ -26,10 +26,10 @@ ENV EULA TRUE
 ENV VERSION 1.7.10
 
 # Use your custom server.properties
-COPY server.properties /tmp/server.properties
+COPY server.properties /server.properties
 
 # Add /mods of your repo into the image
-ADD /mods /mods
+COPY mods /mods
 # or download a modpack
 # ENV MODPACK "http://....."
 

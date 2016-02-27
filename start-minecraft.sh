@@ -121,6 +121,10 @@ case "X$MODPACK" in
 esac
 fi
 
+if [ ! -e server.properties ]; then
+  cp /server.properties .
+fi
+
 if [ -n "$ICON" -a ! -e server-icon.png ]; then
   echo "Using server icon from $ICON..."
   # Not sure what it is yet...call it "img"

@@ -19,7 +19,7 @@ VOLUME ["/data"]
 VOLUME ["/mods"]
 VOLUME ["/config"]
 
-COPY server.properties /tmp/server.properties
+COPY server.properties /server.properties
 
 EXPOSE 25565
 WORKDIR /data
