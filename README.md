@@ -7,7 +7,7 @@ docker run -i \
   -p 25565:25565 \
   -v /path/to/data:/data \
   -e 'EULA=TRUE' \
-  craftcloud/forge
+  craftcloud/forge:1.7.10
 ```
 
 Options:
@@ -19,11 +19,9 @@ Options:
 ## To build images based on this image
 
 ```Dockerfile
-FROM craftcloud/forge:latest
+FROM craftcloud/forge:1.7.10
 
 ENV EULA TRUE
-
-ENV VERSION 1.7.10
 
 # Use your custom server.properties
 COPY server.properties /server.properties
