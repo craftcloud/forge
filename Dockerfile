@@ -3,7 +3,7 @@ FROM java:8
 MAINTAINER XiNGRZ <xxx@oxo.ooo>
 
 # Version of Minecraft Server
-ENV VERSION latest
+ENV VERSION 1.8.9
 
 COPY install.sh /install
 COPY launch.sh /launch
